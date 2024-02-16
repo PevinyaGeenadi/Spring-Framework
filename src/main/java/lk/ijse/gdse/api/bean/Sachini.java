@@ -1,12 +1,18 @@
 package lk.ijse.gdse.api.bean;
 
+import lk.ijse.gdse.api.util.WhiteFace;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("Sachini")
+@Component
+@Primary
+@Qualifier("Long Hair")
+@WhiteFace
 public class Sachini implements GoodGirl, BeanNameAware,BeanFactoryAware,ApplicationContextAware,InitializingBean,DisposableBean{
     public Sachini() {
         System.out.println("Sachini Contructor");
