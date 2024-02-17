@@ -22,12 +22,20 @@ public class SpringBean {
         System.out.println(nameList);
     }*/
 
+    /*public SpringBean(Collection<String> nameList) {
+        System.out.println("SpringBean() - constructor - " + nameList);
+        System.out.println(nameList);
+    }*/
 
     /* public SpringBean(Set<String> nameList) {
         System.out.println("SpringBean() - constructor -" + nameList);
         System.out.println(nameList);
     } */
 
+    /*public SpringBean(Map<String,String> nameList) {
+        System.out.println("SpringBean() - constructor - " + nameList);
+        System.out.println(nameList);
+    }*/
 
      /* public SpringBean(List<GoodGirl> GoodGirl) {
         System.out.println("SpringBean() - constructor -" + GoodGirl);
