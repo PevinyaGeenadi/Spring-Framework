@@ -45,6 +45,6 @@ public class Sachini implements GoodGirl, BeanNameAware,BeanFactoryAware,Applica
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("Sachini DisposableBean");
+        System.out.println("Sachini- DisposableBean");
     }
 }
