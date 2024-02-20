@@ -42,7 +42,7 @@ public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, Appli
 
     /* It is not mandatory to put @Autowired annotation
     if there is only one constructor during constructor injection*/
-    @Autowired
+    @Autowired  // Autowiring the constructor
     public Boy(@Qualifier("Long Hair") @WhiteFace GoodGirl gf) {
         this.gf = gf;
         System.out.println("Boy(GoodGirl gf) - Constructor");
@@ -50,6 +50,7 @@ public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, Appli
         gf.love();
     }
 
+    // Default constructor
     public Boy() {
         System.out.println("Boy() - Constructor");
     }
