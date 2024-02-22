@@ -57,6 +57,7 @@ public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, Appli
 
     @Override
     public void setBeanName(String s) {
+
         System.out.println("Boy - BeanNameAware : ");
     }
 
